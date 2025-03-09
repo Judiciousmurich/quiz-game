@@ -10,7 +10,7 @@
     <div class="container">
         <!-- Start Screen -->
         <div class="screen" id="start-screen">
-            <h1>Simple Quiz Game</h1>
+            <h1>Enhanced Quiz Game</h1>
             <p>An exciting quiz game to test your knowledge!</p>
             <div class="settings">
                 <div class="setting-group">
@@ -20,12 +20,16 @@
             </div>
             <button class="btn" id="start-btn">Start Quiz</button>
         </div>
-
         <!-- Question Screen -->
         <div class="screen hide" id="question-screen">
-            <div class="progress-text" id="progress-text">Question 1 of 10</div>
-            <div class="progress-bar-container">
-                <div class="progress-bar" id="progress-bar"></div>
+          
+            <!-- Question Indicators -->
+            <div class="question-indicators" id="question-indicators">
+                <!-- Indicators will be inserted here -->
+            </div>
+            
+            <div class="question-status">
+                <span id="answered-count">0</span>/<span id="total-count">10</span> questions answered
             </div>
             
             <div class="timer-container">
@@ -45,13 +49,17 @@
             
             <div class="feedback-text" id="feedback-text"></div>
             
+            <div class="alert hide" id="unanswered-alert">
+                <!-- Unanswered questions alert will be shown here -->
+            </div>
+            
             <div class="btn-container">
-                <button class="btn" id="check-btn">Check Answer</button>
-                <button class="btn" id="prev-btn">Previous</button>
+                <button class="btn" id="prev-btn">Prev</button>
                 <button class="btn" id="next-btn">Next</button>
+                <button class="btn" id="check-btn">Check</button>
+                <button class="btn primary-btn" id="finish-btn" disabled>Finish</button>
             </div>
         </div>
-
         <!-- Score Screen -->
         <div class="screen hide" id="score-screen">
             <h1 id="score-title">Your Score: 8/10</h1>
@@ -60,7 +68,6 @@
             <button class="btn" id="review-btn">Review Answers</button>
         </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
