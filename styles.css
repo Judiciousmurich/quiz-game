@@ -73,7 +73,6 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 20px;
-    /* Modified to keep buttons on one line */
     flex-wrap: nowrap;
     gap: 5px;
 }

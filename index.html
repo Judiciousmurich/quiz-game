@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Enhanced Quiz Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <!-- Start Screen -->
@@ -22,52 +24,52 @@
         </div>
         <!-- Question Screen -->
         <div class="screen hide" id="question-screen">
-          
-            <!-- Question Indicators -->
+
+
             <div class="question-indicators" id="question-indicators">
-                <!-- Indicators will be inserted here -->
+
             </div>
-            
+
             <div class="question-status">
                 <span id="answered-count">0</span>/<span id="total-count">10</span> questions answered
             </div>
-            
+
             <div class="timer-container">
                 <div class="timer-text">Time remaining: <span id="timer-display">30</span> seconds</div>
                 <div class="timer-bar-container">
                     <div class="timer-bar" id="timer-bar"></div>
                 </div>
             </div>
-            
+
             <div class="question-container">
                 <h1 id="question-text">Question goes here?</h1>
             </div>
-            
+
             <div class="options-container" id="options-container">
-                <!-- Options will be inserted here -->
+
             </div>
-            
+
             <div class="feedback-text" id="feedback-text"></div>
-            
+
             <div class="alert hide" id="unanswered-alert">
-                <!-- Unanswered questions alert will be shown here -->
+
+
+                <div class="btn-container">
+                    <button class="btn" id="prev-btn">Prev</button>
+                    <button class="btn" id="next-btn">Next</button>
+                    <button class="btn" id="check-btn">Check</button>
+                    <button class="btn primary-btn" id="finish-btn" disabled>Finish</button>
+                </div>
             </div>
-            
-            <div class="btn-container">
-                <button class="btn" id="prev-btn">Prev</button>
-                <button class="btn" id="next-btn">Next</button>
-                <button class="btn" id="check-btn">Check</button>
-                <button class="btn primary-btn" id="finish-btn" disabled>Finish</button>
+            <!-- Score Screen -->
+            <div class="screen hide" id="score-screen">
+                <h1 id="score-title">Your Score: 8/10</h1>
+                <p id="score-message">Great job! Try again to beat your score!</p>
+                <button class="btn" id="restart-btn">Restart Quiz</button>
+                <button class="btn" id="review-btn">Review Answers</button>
             </div>
         </div>
-        <!-- Score Screen -->
-        <div class="screen hide" id="score-screen">
-            <h1 id="score-title">Your Score: 8/10</h1>
-            <p id="score-message">Great job! Try again to beat your score!</p>
-            <button class="btn" id="restart-btn">Restart Quiz</button>
-            <button class="btn" id="review-btn">Review Answers</button>
-        </div>
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
 </body>
+
 </html>
